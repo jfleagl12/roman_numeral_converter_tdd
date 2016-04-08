@@ -1,24 +1,24 @@
 class RomanNumeralConverter
+   
+   DIGITS = [
+       [10, "x"],
+       [9, "IX"],
+       [5, "V"],
+       [4, "IV"],
+       [1, "I"],
+     
+     ]
     
     def convert(n)
-        result = ""
-        while n >= 10
-            result << "X"
-            n -= 10
+     result = ""
+                
+    DIGITS.each do |limit, glyph|
+        while n >= limit
+            result << glyph
+            n -= limit
+          end
         end
-        if n >= 5
-            result << "V"
-            n -= 5
-        end
-        if n >= 9
-            result << "IX"
-            n -= 9
-        end
-        if n >= 4 
-            result << "IV"
-            n -= 4
-        end
-            result << "I" * n
+        result
         
     end
 end
