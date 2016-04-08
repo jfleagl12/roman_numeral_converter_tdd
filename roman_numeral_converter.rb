@@ -1,6 +1,6 @@
 class RomanNumeralConverter
     
     def convert(n)
-        "I"
+        "I" * n
     end
 end
