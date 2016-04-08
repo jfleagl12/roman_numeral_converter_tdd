@@ -10,6 +10,10 @@ class RomanNumeralConverter
             result << "V"
             n -= 5
         end
+        if n >= 9
+            result << "IX"
+            n -= 9
+        end
         if n >= 4 
             result << "IV"
             n -= 4
