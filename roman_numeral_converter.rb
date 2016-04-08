@@ -2,7 +2,7 @@ class RomanNumeralConverter
     
     def convert(n)
         result = ""
-        if n >= 10
+        while n >= 10
             result << "X"
             n -= 10
         end
