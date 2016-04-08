@@ -8,5 +8,7 @@ describe RomanNumeralConverter do
     Then { converter.convert(1) == "I" }
     Then { converter.convert(2) == "II" }
     Then { converter.convert(5) == "V" }
+    Then { converter.convert(6) == "VI" }
+
 
 end
