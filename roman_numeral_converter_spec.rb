@@ -1,4 +1,7 @@
-require rspec/git/rb
+require "rspec/git/rb"
+require "roman_numeral_converter.rb"
+
+RSpec::Given.use_natural_assertions
 
 describe RomanNumeralConverter do
     Given(:converter) {RomanNumeralConverter.new }
